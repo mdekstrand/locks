@@ -19,7 +19,11 @@ import { Notify } from "./notify.ts";
  * provide an explicit {@link LockHandle.release} method for use in a
  * `try`-`finally` block.
  *
- * This semaphore implementation provides
+ * This semaphore implementation provides a few safety features:
+ *
+ * - Detects re-releases of an already-released lock and throws an error.
+ * - Automatically releases stale locks (locks handles that were
+ *   garbage-collected before being released).
  */
 export class Semaphore {
   #slots: number;
