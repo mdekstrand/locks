@@ -1,3 +1,8 @@
+/**
+ * Notify waiting tasks of possible updates.
+ *
+ * @module
+ */
 import { Deque } from "@korkje/deque";
 
 interface NotifyWaiter extends PromiseWithResolvers<boolean> {

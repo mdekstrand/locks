@@ -1,3 +1,8 @@
+/**
+ * Mutexes (mutual exclusion locks).
+ *
+ * @module
+ */
 import { Semaphore } from "./semaphore.ts";
 
 /**

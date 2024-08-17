@@ -1,3 +1,8 @@
+/**
+ * Semaphores (locks allowing a fixed concurrency level).  See {@link Semaphore}.
+ *
+ * @module
+ */
 import { Notify } from "./notify.ts";
 
 /**
