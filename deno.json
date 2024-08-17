@@ -9,5 +9,12 @@
     "./notify": "./notify.ts",
     "./semaphore": "./semaphore.ts",
     "./mutex": "./mutex.ts"
+  },
+  "publish": {
+    "include": [
+      "LICENSE.md",
+      "README.md",
+      "*.ts"
+    ]
   }
 }
