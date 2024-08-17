@@ -22,8 +22,9 @@ import { Notify } from "./notify.ts";
  * This semaphore implementation provides a few safety features:
  *
  * - Detects re-releases of an already-released lock and throws an error.
- * - Automatically releases stale locks (locks handles that were
- *   garbage-collected before being released).
+ * - Automatically detects and releases stale locks (locks handles that were
+ *   garbage-collected before being released).  This detection is based on
+ *   holding weak references to locks.
  */
 export class Semaphore {
   #slots: number;
