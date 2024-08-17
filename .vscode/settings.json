@@ -1,0 +1,3 @@
+{
+    "[typescript]": {"editor.formatOnSave": true, "editor.codeActionsOnSave": ["source.organizeImports"]}
+}

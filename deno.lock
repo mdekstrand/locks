@@ -1,0 +1,19 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@korkje/deque@^0.1.3": "jsr:@korkje/deque@0.1.3"
+    },
+    "jsr": {
+      "@korkje/deque@0.1.3": {
+        "integrity": "f4a8563a391951b5667231fbb39bfb0eca6f9532e92ea674f96e300a1990f793"
+      }
+    }
+  },
+  "remote": {},
+  "workspace": {
+    "dependencies": [
+      "jsr:@korkje/deque@^0.1.3"
+    ]
+  }
+}

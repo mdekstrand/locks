@@ -1,0 +1,13 @@
+{
+  "name": "@mdekstrand/locks",
+  "version": "0.1.0",
+  "imports": {
+    "@korkje/deque": "jsr:@korkje/deque@^0.1.3"
+  },
+  "exports": {
+    ".": "./mod.ts",
+    "./notify": "./notify.ts",
+    "./semaphore": "./semaphore.ts",
+    "./mutex": "./mutex.ts"
+  }
+}
