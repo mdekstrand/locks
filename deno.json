@@ -1,6 +1,6 @@
 {
   "name": "@mdekstrand/locks",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "imports": {
     "@korkje/deque": "jsr:@korkje/deque@^0.1.3"
   },
