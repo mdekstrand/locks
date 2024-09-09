@@ -131,7 +131,7 @@ export class LockHandle implements Disposable {
   /**
    * The lock's key.
    */
-  key: symbol = Symbol();
+  readonly key: symbol = Symbol();
   /**
    * The release method.
    */
@@ -145,6 +145,9 @@ export class LockHandle implements Disposable {
     this.release();
   }
 
+  /**
+   * Manually release the lock handle.
+   */
   release() {
     this.#release(this.key);
   }
