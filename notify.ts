@@ -73,7 +73,10 @@ export class Notify {
       const wait = this.#waiters.shift();
       if (!wait) return;
 
-      queueMicrotask(() => wait.resolve(true));
+      if (!wait.resolution) {
+        wait.resolution = "notified";
+        queueMicrotask(() => wait.resolve(true));
+      }
     }
   }
 }
