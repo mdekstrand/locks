@@ -3,7 +3,7 @@
  *
  * @module
  */
-import { Notify } from "./notify.ts";
+import { Notify } from "./notify.js";
 
 /**
  * Semaphore locking primitive.  A semaphore is a lock with a specified number

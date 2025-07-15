@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "nodenext",
+    "target": "es2024",
+    "strict": true,
+    "lib": [
+      "ESNext",
+      "WebWorker",
+      "WebWorker.AsyncIterable"
+    ]
+  },
+  "include": [
+    "*.ts",
+  ]
+}

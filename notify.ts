@@ -3,7 +3,7 @@
  *
  * @module
  */
-import { Deque } from "@korkje/deque";
+import Denque from "denque";
 
 interface NotifyWaiter extends PromiseWithResolvers<boolean> {
   resolution?: "notified" | "cancelled";
@@ -23,7 +23,7 @@ interface NotifyWaiter extends PromiseWithResolvers<boolean> {
  * actually happened or meets the waiter's requirements.
  */
 export class Notify {
-  #waiters: Deque<NotifyWaiter> = new Deque();
+  #waiters: Denque<NotifyWaiter> = new Denque();
 
   /**
    * Wait until notified.

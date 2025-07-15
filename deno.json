@@ -2,7 +2,7 @@
   "name": "@mdekstrand/locks",
   "version": "0.1.4",
   "imports": {
-    "@korkje/deque": "jsr:@korkje/deque@^0.1.3"
+    "denque": "jsr:@korkje/deque@^0.1.3"
   },
   "exports": {
     ".": "./mod.ts",

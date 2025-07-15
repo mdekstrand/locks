@@ -3,7 +3,7 @@
  *
  * @module
  */
-import { Semaphore } from "./semaphore.ts";
+import { Semaphore } from "./semaphore.js";
 
 /**
  * A mutex (mutual exclusion) lock, allowing a single task to hold the lock at a
