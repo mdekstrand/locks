@@ -4,6 +4,7 @@
     "module": "nodenext",
     "target": "es2024",
     "strict": true,
+    "declaration": true,
     "lib": [
       "ESNext",
       "WebWorker",
