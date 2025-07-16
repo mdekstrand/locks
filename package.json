@@ -13,7 +13,7 @@
   "license": "MIT",
   "author": "Michael Ekstrand",
   "type": "module",
-  "module": "dist/mod.js",
+  "main": "dist/mod.js",
   "types": "dist/mod.d.ts",
   "directories": {
     "doc": "docs"
