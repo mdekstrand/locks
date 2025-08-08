@@ -3,6 +3,7 @@
  *
  * @module
  */
+import { createLockHandle, LockHandle } from "./handle.js";
 import { Notify } from "./notify.js";
 
 /**
@@ -56,7 +57,7 @@ export class Semaphore {
       await this.#wait.notified(50);
     }
     const release = this.#release.bind(this);
-    const lock = new LockHandle(release);
+    const lock = createLockHandle(release);
     this.#active.set(lock.key, new WeakRef(lock));
     return lock;
   }
@@ -124,31 +125,3 @@ export class Semaphore {
   }
 }
 
-/**
- * Handle representing an acquired lock.
- */
-export class LockHandle implements Disposable {
-  /**
-   * The lock's key.
-   */
-  readonly key: symbol = Symbol();
-  /**
-   * The release method.
-   */
-  #release: (key: symbol) => void;
-
-  constructor(release: (key: symbol) => void) {
-    this.#release = release;
-  }
-
-  [Symbol.dispose]() {
-    this.release();
-  }
-
-  /**
-   * Manually release the lock handle.
-   */
-  release() {
-    this.#release(this.key);
-  }
-}
