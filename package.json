@@ -1,6 +1,6 @@
 {
   "name": "@mdekstrand/locks",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "TypeScript lock implementations",
   "homepage": "https://github.com/mdekstrand/locks#readme",
   "bugs": {
