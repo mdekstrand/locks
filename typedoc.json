@@ -1,7 +1,6 @@
 {
   "entryPoints": [
     "mod.ts",
-    "*/mod.ts"
   ],
   "entryPointStrategy": "expand",
   "outputs": [
