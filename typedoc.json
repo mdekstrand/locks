@@ -1,0 +1,23 @@
+{
+  "entryPoints": [
+    "mod.ts",
+    "*/mod.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "outputs": [
+    {
+      "name": "html",
+      "path": "./build/api-docs"
+    }
+  ],
+  "excludeTags": [
+    "@allowunused",
+    "@override",
+    "@virtual",
+    "@privateRemarks",
+    "@satisfies",
+    "@overload",
+    "@inline",
+    "@inlineType"
+  ]
+}

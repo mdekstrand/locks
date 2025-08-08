@@ -22,6 +22,7 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "typedoc": "^0.28.9",
     "typescript": "^5.8.3"
   },
   "dependencies": {
