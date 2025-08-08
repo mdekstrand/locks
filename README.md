@@ -21,5 +21,4 @@ It has a single dependency, [denque][], used to implement `Notify` (which in
 turn is used to implement many other elements).
 
 [asyncutil]: https://github.com/jsr-core/asyncutil
-[deque]: https://jsr.io/@korkje/deque
 [denque]: https://github.com/invertase/denque
